@@ -11,22 +11,22 @@
 
     <artifactId>presentation</artifactId>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-contract-maven-plugin</artifactId>
-                <version>2.0.2.RELEASE</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <packageWithBaseClasses>pl.org.opi.polon2.usersmanagement.presentation.userdata</packageWithBaseClasses>
-                    <ignoredFiles>
-                        <ignoredFile>__**</ignoredFile>
-                    </ignoredFiles>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-contract-maven-plugin</artifactId>-->
+<!--                <version>2.0.2.RELEASE</version>-->
+<!--                <extensions>true</extensions>-->
+<!--                <configuration>-->
+<!--                    <packageWithBaseClasses>pl.org.opi.polon2.usersmanagement.presentation.userdata</packageWithBaseClasses>-->
+<!--                    <ignoredFiles>-->
+<!--                        <ignoredFile>__**</ignoredFile>-->
+<!--                    </ignoredFiles>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
     <dependencies>
         <dependency>

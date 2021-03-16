@@ -82,6 +82,19 @@ services:
       ELASTICSEARCH_HOSTS: '["http://es01:9200","http://es02:9200","http://es03:9200"]'
     networks:
       - elastic
+  app:
+    build: .
+    ports:
+      - "8010:8010"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/comics?useUnicode=true&characterEncoding=utf8&useSSL=false
+      SPRING_DATASOURCE_USERNAME: comics
+      SPRING_DATASOURCE_PASSWORD: comics_admin
+    depends_on:
+      - mysql
+      - es01
+      - es02
+      - es03
 
 volumes:
   data01:
