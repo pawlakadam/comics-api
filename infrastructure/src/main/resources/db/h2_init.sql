@@ -1,0 +1,9 @@
+CREATE USER IF NOT EXISTS comics PASSWORD 'comics_admin' ADMIN;
+
+CREATE USER IF NOT EXISTS comics_user PASSWORD 'Akuku123';
+
+CREATE SCHEMA IF NOT EXISTS comics;
+
+GRANT ALL ON SCHEMA comics TO comics;
+
+SET SCHEMA comics;
